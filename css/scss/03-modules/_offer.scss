@@ -107,6 +107,13 @@
             @media (max-width: 600px) {
                 font-size: 30px;
             }
+            & + p {
+                text-transform: uppercase;
+                display: block;
+                font-size: 26px;
+                font-weight: 100;
+                font-family: $pfd;
+            }
         }
         .button {
             margin-top: 16px;
