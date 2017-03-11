@@ -1,0 +1,59 @@
+.short-page-content {
+    text-align: left;
+    position: relative;
+    padding-bottom: 60px;
+
+    h3 {
+        font-size: 50px;
+        color: $gold;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+
+    .text {
+        line-height: 30px;
+        letter-spacing: 0.025em;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: $gold;
+        text-transform: uppercase;
+        font-family: $pfd;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        font-size: 16px;
+    }
+
+    &.left-image {
+        padding-right: 8.33%;
+        padding-left: 50%;
+
+        img {
+            position: absolute;
+            left: 8.33%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+
+    &.right-image {
+        padding-left: 8.33%;
+        padding-right: 50%;
+
+        img {
+            position: absolute;
+            right: 8.33%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+}
