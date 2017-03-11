@@ -10,6 +10,7 @@ body {
   color: #0b0c0d;
   font-family: $l;
   padding-top: 130px;
+  font-size: 15px;
 }
 h1,h2,h3,h4,h5 {
     font-family: $pfd;
@@ -19,8 +20,8 @@ h1,h2,h3,h4,h5 {
 }
 .bigTitlte {
   position: relative;
-  h2,
-  h1 {
+  > h2,
+  > h1 {
     font-size: 200px;
     color: #d5d7db;
     font-weight: 500;
@@ -39,8 +40,8 @@ h1,h2,h3,h4,h5 {
       letter-spacing: 0.05em;
     }
   }
-  &--up h1 + div,
-  &--up h2 + div {
+  &--up > h1 + div,
+  &--up > h2 + div {
       margin-top: -140px;
       position: relative;
       z-index: 2;

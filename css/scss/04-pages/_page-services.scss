@@ -1,0 +1,106 @@
+.services {
+    padding-top: 60px;
+    .service {
+        &:nth-of-type(2n) {
+            .wrapper {
+                -webkit-flex-direction: row-reverse;
+                    -ms-flex-direction: row-reverse;
+                        flex-direction: row-reverse;
+            }
+            .service__info {
+                padding-right: 0;
+                padding-left: 60px;
+            }
+        }
+    }
+}
+.service {
+    border-bottom: 5px solid #fff;
+    padding: 70px 0;
+    .wrapper {
+        @include flex($alignI:stretch);
+    }
+    &__info {
+        width: 50%;
+        padding-right: 60px;
+        text-align: left;
+        p {
+            font-size: 15px;
+            line-height: 30px;
+            color: #FFF;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        h2 {
+            color: $text;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            font-family: $l;
+        }
+        .price {
+            display: block;
+            color: $gold;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: $pfd;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .button {
+            margin-top: 50px;
+        }
+    }
+    &__img {
+        width: 50%;
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            height: 100%;
+        }
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            border: 10px solid #fff;
+            max-width: 98%;
+        }
+    }
+}
+
+.service-archive {
+    .products {
+        margin-top: 60px;
+    }
+}
+
+.single-service {
+    .service {
+        padding: 0;
+        -webkit-align-items: flex-start;
+                align-items: flex-start;
+    }
+    .service__info {
+        padding-left: 40px;
+        padding-right: 0;
+        p {
+            color: #848484;
+            line-height: 25px;
+        }
+        .button {
+            margin-top: 30px;
+        }
+    }
+    .service__img {
+        img {
+            display: block;
+            border: none;
+            width: 100%;
+        }
+        &:before {
+            display: none;
+        }
+    }
+}
