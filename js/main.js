@@ -98,6 +98,13 @@ jQuery(document).ready(function($) {
         pauseOnHover: false
     });
 
+    /*---------------------------
+                                  Tabs
+    ---------------------------*/
+    if ( exist('.tabs') ) {
+        $('.tabs').tabs();
+    }
+
     /*----------------------------
                               SEND FORM
     -------------------------*/

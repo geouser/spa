@@ -11,13 +11,53 @@ body {
   font-family: $l;
   padding-top: 130px;
 }
+h1,h2,h3,h4,h5 {
+    font-family: $pfd;
+}
+.section {
+    padding: 100px 0;
+}
+.bigTitlte {
+  position: relative;
+  h2,
+  h1 {
+    font-size: 200px;
+    color: #d5d7db;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+    left: 50%;
+    text-align: center;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+           -o-transform: translateX(-50%);
+              transform: translateX(-50%);
+  }
+  &--up h1 + div,
+  &--up h2 + div {
+      margin-top: -140px;
+      position: relative;
+      z-index: 2;
+  }
+}
 
+.block-title {
+    color: $gold;
+    font-size: 50px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
 
 // lAYOUT
 // ---------------------------
 .wrapper {
 	width: 1200px;
-  padding: 0 15px;
+    padding: 0 15px;
 	margin: 0 auto;
 	text-align: center;
 }
