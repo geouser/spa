@@ -28,12 +28,16 @@ h1,h2,h3,h4,h5 {
     text-transform: uppercase;
     position: relative;
     left: 50%;
+    letter-spacing: 0.15em;
     text-align: center;
       -webkit-transform: translateX(-50%);
          -moz-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
            -o-transform: translateX(-50%);
               transform: translateX(-50%);
+    @media (max-width: 1600px) {
+      letter-spacing: 0.05em;
+    }
   }
   &--up h1 + div,
   &--up h2 + div {
