@@ -1,0 +1,174 @@
+.breadcrumbs {
+    text-align: left;
+    font-size: 13px;
+    font-family: $pfd;
+    text-transform: uppercase;
+    color: $text;
+    letter-spacing: 0.075em;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+    a {
+        color: $text;
+        text-decoration: underline;
+        display: inline-block;
+    }
+
+    span[typeof=ListItem]:last-child {
+        color: $gold;
+    }
+}
+
+
+
+
+.sidebar-block {
+    @include flex($alignI: flex-start);
+
+    .content-area {
+        width: 74.4%;
+        padding-right: 70px;
+        text-align: left;
+
+        article {
+            padding: 0 130px 0 30px;
+        }
+    }
+
+    .sidebar {
+        width: 25.6%;
+    }
+}
+
+
+
+.article-preview {
+    position: relative;
+    margin-bottom: 35px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .date {
+        position: absolute;
+        top: 0;
+        width: 65px;
+        text-align: center;
+        color: #fff;
+        left: 35px;
+        background-color: $text;
+        padding-bottom: 7px;
+
+        &-day {
+            font-size: 26px;
+            font-weight: bold;
+            padding: 4px 0;
+        }
+
+        &-month {
+            background-color: $gold;
+            margin: 0 -5px;
+            font-family: $pfd;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            padding: 5px 0;
+        }
+    }
+}
+
+
+
+article {
+    font-size: 15px;
+    color: $text;
+    line-height: 25px;
+
+    & > *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+        font-family: $l;
+    }
+    
+    h1 {
+        font-size: 1.9em;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.60em;
+    }
+    h4 {
+        font-size: 1.45em;
+    }
+    h5 {
+        font-size: 1.3em;
+    }
+    h6 {
+        font-size: 1.15em;
+    }
+
+
+    ul {
+        padding-left: 15px;
+    }
+
+    img {
+        display: block;
+        width: auto!important;
+        height: auto!important;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    blockquote {
+        padding-left: 15px;
+        border-left: 2px solid $text;
+        margin-left: 15px;
+    }
+}
+
+
+
+
+.recent-post {
+    background-color: #EEEEF0;
+    padding: 15px 30px;
+    text-align: left;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &-date {
+        display: block;
+        font-family: $pfd;
+        font-weight: 500;
+        font-size: 15px;
+        color: #a3a5a8;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 12px;
+    }
+
+    &-title {
+        color: $text;
+        font-size: 15px;
+        text-decoration: underline;
+        line-height: 20px;
+    }
+}

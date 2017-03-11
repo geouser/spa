@@ -56,3 +56,54 @@
     left: 15px;
     background-image: url("../images/left-ar.svg");
 }
+
+
+
+
+
+/* Form */
+
+form {
+    text-align: left;
+
+    .form-group {
+        width: 100%;
+        text-align: left;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            color: $text;
+            font-family: $pfd;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=phone],
+    textarea {
+        width: 100%;
+        height: 50px;
+        display: block;
+        padding: 0 10px;
+        border: 2px solid #D5D7DB;
+    }
+
+    textarea {
+        padding: 15px 10px;
+        height: 200px;
+        resize: none;
+    }
+
+    button {
+        height: 60px;
+    }
+}

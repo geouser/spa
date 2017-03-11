@@ -1,0 +1,54 @@
+.contact-us-page {
+    padding-bottom: 0;
+
+    .wrapper {
+        margin-top: 45px;
+        margin-bottom: 75px;
+    }
+} 
+
+.contacts-info {
+    text-align: left;
+
+    &-title {
+        color: $text;
+        font-family: $pfd;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    .contacts-block {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        color: $text;
+        line-height: 25px;
+        font-size: 15px;
+
+        &-title {
+            color: $gold;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-family: $pfd;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        address {
+            padding-left: 0;
+        }
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+
+.map {
+    height: 500px;
+}
