@@ -1,0 +1,66 @@
+.about-section {
+    padding-bottom: 0;
+
+    img {
+        margin-top: -25px;
+        position: relative;
+        z-index: -1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.therapists-content {
+    position: relative;
+    padding: 150px 0 260px;
+    margin-top: 70px;
+    text-align: right;
+    z-index: 1;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: -50px;
+        z-index: -1;
+    }
+}
+
+
+.short-content {
+    display: inline-block;
+    text-align: center;
+    width: 760px;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+
+    h3 {
+        font-size: 50px;
+        color: $text;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+
+    .excerpt {
+        padding: 0 80px;
+        line-height: 25px;
+        letter-spacing: 0.025em;
+        margin-bottom: 40px;
+    }
+}
