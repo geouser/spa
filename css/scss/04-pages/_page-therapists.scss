@@ -7,4 +7,10 @@
         -o-transform: translateY(-57%);
         transform: translateY(-57%);
     }
+
+    .short-page-content strong {
+        font-family: $pfd;
+        font-weight: 500;
+        font-size: 16px;
+    }
 }
