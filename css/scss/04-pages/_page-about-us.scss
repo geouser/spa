@@ -10,6 +10,12 @@
         text-transform: uppercase;
         font-weight: normal;
         margin-bottom: 25px;
+
+        @media (max-width: 767px) {
+            font-size: 40px;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
     }
 
     .text {
@@ -22,14 +28,38 @@
         padding-right: 8.33%;
         padding-left: 50%;
 
+        @media (max-width: 991px) {
+            padding-right: 0;
+        }
+
+        @media (max-width: 767px) {
+            padding: 0;
+        }
+
         img {
             position: absolute;
             left: 8.33%;
             top: 50%;
+            max-width: 47%;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             -o-transform: translateY(-50%);
             transform: translateY(-50%);
+
+            @media (max-width: 991px) {
+                left: 0;
+            }
+
+            @media (max-width: 767px) {
+                position: static;
+                max-width: 100%;
+                display: block;
+                margin: 40px auto 0;
+                -webkit-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+            }
         }
     }
 
@@ -37,14 +67,39 @@
         padding-left: 8.33%;
         padding-right: 50%;
 
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
+
+        @media (max-width: 767px) {
+            padding: 0;
+        }
+
         img {
             position: absolute;
             right: 8.33%;
             top: 50%;
+            max-width: 47%;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             -o-transform: translateY(-50%);
             transform: translateY(-50%);
+
+            @media (max-width: 991px) {
+                right: 0;
+            }
+
+            @media (max-width: 767px) {
+                position: static;
+                max-width: 100%;
+                display: block;
+                margin: 40px auto 0;
+                -webkit-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+            }
+
         }
     }
 }

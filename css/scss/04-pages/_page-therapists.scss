@@ -1,11 +1,22 @@
 .therapists-page {
     padding-bottom: 150px;
 
+    @media (max-width: 767px) {
+        padding-bottom: 100px;
+    }
+
     .short-page-content img {
         -webkit-transform: translateY(-57%);
         -ms-transform: translateY(-57%);
         -o-transform: translateY(-57%);
         transform: translateY(-57%);
+
+        @media (max-width: 767px) {
+            -webkit-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+        }
     }
 
     .short-page-content strong {
