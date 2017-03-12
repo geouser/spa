@@ -96,6 +96,22 @@
     &__img {
         width: 50%;
         text-align: center;
+        position: relative;
+        i {
+            display: block;
+            width: 800px;
+            height: 510px;
+            position: absolute;
+            z-index: 0;
+            left: -200px;
+            top: -200px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            -webkit-background-size: auto;
+                 -o-background-size: auto;
+                    background-size: auto;
+            background-image: url("../images/dots.png");
+        }
         @media (max-width: 760px) {
             width: 100%;
         }
@@ -104,12 +120,20 @@
             vertical-align: middle;
             content: "";
             height: 100%;
+            @media (max-width: 760px) {
+                display: none;
+            }
         }
         img {
+            position: relative;
+            z-index: 2;
             display: inline-block;
             vertical-align: middle;
             border: 10px solid #fff;
             max-width: 98%;
+            @media (max-width: 760px) {
+                max-width: 100%;
+            }
         }
     }
 }
@@ -117,6 +141,9 @@
 .service-archive {
     .products {
         margin-top: 60px;
+        @media (max-width: 760px) {
+            margin-top: 20px;
+        }
     }
 }
 
@@ -129,15 +156,25 @@
     .service__info {
         padding-left: 40px;
         padding-right: 0;
+        @media (max-width: 760px) {
+            margin-bottom: 0;
+            margin-top: 40px;
+        }
         p {
             color: #848484;
             line-height: 25px;
+            @media (max-width: 1200px) {
+                line-height: 1.4;
+            }
         }
         h2 {
             color: $text;
             font-family: $l;
             font-weight: 700;
             font-size: 30px;margin-bottom: 16px;
+            @media (max-width: 760px) {
+                font-size: 26px;
+            }
         }
         .button {
             margin-top: 10px;
