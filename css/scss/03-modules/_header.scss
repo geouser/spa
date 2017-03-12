@@ -107,6 +107,10 @@
         display: none;
         &--mobile {
             display: block;
+
+            & + .section {
+                padding-top: 140px;
+            }
         }
     }
     &:before {

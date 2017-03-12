@@ -30,13 +30,35 @@
         padding-right: 70px;
         text-align: left;
 
+        @media (max-width: 991px) {
+            padding-right: 30px;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding-right: 0;;
+        }
+
         article {
             padding: 0 130px 0 30px;
+
+            @media (max-width: 991px) {
+                padding: 0 30px;
+            }
+
+            @media (max-width: 767px) {
+                padding: 0;
+            }
         }
     }
 
     .sidebar {
         width: 25.6%;
+
+        @media (max-width: 767px) {
+            margin-top: 50px;
+            width: 100%;
+        }
     }
 }
 
@@ -91,6 +113,10 @@ article {
     font-size: 15px;
     color: $text;
     line-height: 25px;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
 
     & > *:not(:last-child) {
         margin-bottom: 15px;

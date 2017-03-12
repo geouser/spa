@@ -5,6 +5,7 @@
         margin-top: -25px;
         position: relative;
         z-index: -1;
+        max-width: 100%;
     }
 }
 
@@ -31,11 +32,22 @@
     text-align: right;
     z-index: 1;
 
+    @media (max-width: 991px) {
+        text-align: center;
+        padding: 0;
+    }
+
     img {
         position: absolute;
         top: 0;
         left: -50px;
         z-index: -1;
+        max-width: 100%;
+
+        @media (max-width: 991px) {
+            position: static;
+            margin-top: 25px;
+        }
     }
 }
 
@@ -55,6 +67,11 @@
         text-transform: uppercase;
         font-weight: normal;
         margin-bottom: 25px;
+
+        @media (max-width: 991px) {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
     }
 
     .excerpt {
@@ -62,5 +79,13 @@
         line-height: 25px;
         letter-spacing: 0.025em;
         margin-bottom: 40px;
+
+        @media (max-width: 767px) {
+            padding: 0 40px;
+        }
+
+        @media (max-width: 550px) {
+            padding: 0;
+        }
     }
 }
