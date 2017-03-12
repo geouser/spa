@@ -52,32 +52,36 @@
         height: auto;
     }
 
-    .date {
+    .post-date {
         position: absolute;
         top: 0;
-        width: 65px;
-        text-align: center;
-        color: #fff;
         left: 35px;
-        background-color: $text;
-        padding-bottom: 7px;
+    }
+}
 
-        &-day {
-            font-size: 26px;
-            font-weight: bold;
-            padding: 4px 0;
-        }
 
-        &-month {
-            background-color: $gold;
-            margin: 0 -5px;
-            font-family: $pfd;
-            text-transform: uppercase;
-            font-size: 15px;
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            padding: 5px 0;
-        }
+.post-date {
+    width: 65px;
+    text-align: center;
+    color: #fff;
+    background-color: $text;
+    padding-bottom: 7px;
+
+    &-day {
+        font-size: 26px;
+        font-weight: bold;
+        padding: 4px 0;
+    }
+
+    &-month {
+        background-color: $gold;
+        margin: 0 -5px;
+        font-family: $pfd;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        padding: 5px 0;
     }
 }
 
