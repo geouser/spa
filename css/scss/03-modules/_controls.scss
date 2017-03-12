@@ -92,6 +92,11 @@ form {
             letter-spacing: 0.1em;
             font-weight: 500;
             margin-bottom: 4px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                margin-bottom: 2px;
+            }
         }
     }
 
@@ -104,12 +109,20 @@ form {
         display: block;
         padding: 0 10px;
         border: 2px solid #D5D7DB;
+
+        @media (max-width: 767px) {
+            height: 40px;
+        }
     }
 
     textarea {
         padding: 15px 10px;
         height: 200px;
         resize: none;
+
+        @media (max-width: 767px) {
+            height: 150px;
+        }
     }
 
     button {
