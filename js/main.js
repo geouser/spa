@@ -105,6 +105,7 @@ jQuery(document).ready(function($) {
     $('.post-slider').slick({
         dots: false,
         arrows: true,
+        adaptiveHeight: true
     })
 
 
