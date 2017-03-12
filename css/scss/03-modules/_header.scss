@@ -87,8 +87,8 @@
     &--mobile {
         position: absolute;
         top: 0;
-        width: 136px!important;
-        height: 128px!important;
+        width: 90px!important;
+        height: 100px!important;
         left: 0;
         right: 0;
         margin: auto;
@@ -224,12 +224,13 @@ address {
     display: none;
     width: 40px;
     height: 40px;
-    @include position(fixed, 15px, 15px, auto, auto);
+    @include position(fixed, 15px, 10px, auto, auto);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
     background-color: $text;
     border: none;
+    @include transition(all, .4s);
     -webkit-border-radius: 4px;
             border-radius: 4px;
     .menu-line {
