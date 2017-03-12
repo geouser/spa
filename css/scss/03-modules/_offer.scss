@@ -16,15 +16,18 @@
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
-        @media (max-width: 1200px) {
-            font-size: 120px;
-        }
-        @media (max-width: 800px) {
-            font-size: 32px;
-        }
-        @media (max-width: 600px) {
-            font-size: 30px;
-        }
+        @media (max-width: 1700px) {
+                font-size: 120px;
+            }
+            @media (max-width: 1500px) {
+                font-size: 100px;
+            }
+            @media (max-width: 1000px) {
+                font-size: 80px;
+            }
+            @media (max-width: 600px) {
+                font-size: 48px;
+            }
     }
     p {
         width: 440px;
