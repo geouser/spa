@@ -42,6 +42,24 @@ h1,h2,h3,h4,h5 {
     @media (max-width: 1600px) {
       letter-spacing: 0.05em;
     }
+    @media (max-width: 1700px) {
+        font-size: 180px;
+    }
+    @media (max-width: 1500px) {
+        font-size: 160px;
+    }
+    @media (max-width: 1000px) {
+        font-size: 130px;
+    }
+    @media (max-width: 600px) {
+        font-size: 100px;
+    }
+    @media (max-width: 500px) {
+        font-size: 80px;
+    }
+    @media (max-width: 400px) {
+        font-size: 70px;
+    }
   }
   &--up > h1 + div,
   &--up > h2 + div {
