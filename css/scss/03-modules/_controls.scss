@@ -18,6 +18,20 @@
         height: 50px;
         line-height: 50px;
     }
+    @media (max-width: 800px) {
+        width: 140px;
+        height: 40px;
+        line-height: 35px;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+    @media (max-width: 800px) {
+        width: 130px;
+        height: 35px;
+        line-height: 32px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
 }
 
 .post-permalink {
@@ -48,6 +62,10 @@
             background-size: 8px 8px;
     &:before {
         display: none;
+    }
+    @media (max-width: 760px) {
+        width: 30px;
+        height: 30px;
     }
 }
 .slick-arrow:hover {

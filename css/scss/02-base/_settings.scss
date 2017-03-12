@@ -11,6 +11,9 @@ body {
   font-family: $l;
   padding-top: 130px;
   font-size: 15px;
+  @media (max-width: 760px) {
+    padding-top: 0;
+  }
 }
 h1,h2,h3,h4,h5 {
     font-family: $pfd;
