@@ -88,6 +88,10 @@ jQuery(document).ready(function($) {
     });
 
 
+
+    /*---------------------------
+                                  Sliders
+    ---------------------------*/
     $('.offer--slider').slick({
         fade: true,
         arrows: true,
@@ -97,6 +101,14 @@ jQuery(document).ready(function($) {
         autoplaySpeed: 5000,
         pauseOnHover: false
     });
+
+    $('.post-slider').slick({
+        dots: false,
+        arrows: true,
+    })
+
+
+
 
     /*---------------------------
                                   Tabs
