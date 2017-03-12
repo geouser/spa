@@ -10,6 +10,9 @@
             .service__info {
                 padding-right: 0;
                 padding-left: 60px;
+                @media (max-width: 760px) {
+                    padding-left: 0;
+                }
             }
         }
     }
@@ -17,28 +20,56 @@
 .service {
     border-bottom: 5px solid #fff;
     padding: 70px 0;
+    @media (max-width: 760px) {
+        padding: 50px 0;
+    }
     .wrapper {
         @include flex($alignI:stretch);
+        @media (max-width: 760px) {
+            display: block;
+        }
     }
     &__info {
         width: 50%;
         padding-right: 60px;
         text-align: left;
+        @media (max-width: 760px) {
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 40px;
+            text-align: center;
+            padding: 0 10% !important;
+        }
         p {
             font-size: 15px;
             line-height: 30px;
             color: #FFF;
             margin-bottom: 25px;
-            &:last-child {
+            &:last-of-type {
                 margin-bottom: 0;
+            }
+            @media (max-width: 1200px) {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            @media (max-width: 1000px) {
+                font-size: 13px;
+            }
+            @media (max-width: 900px) {
+                font-size: 12px;
             }
         }
         h2 {
-            color: $text;
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 16px;
-            font-family: $l;
+            color: $gold;
+            font-size: 50px;
+            margin-bottom: 40px;
+            @media (max-width: 1000px) {
+                margin-bottom: 30px;
+            }
+            @media (max-width: 760px) {
+                margin-bottom: 20px;
+                font-size: 40px;
+            }
         }
         .price {
             display: block;
@@ -51,10 +82,23 @@
         }
         .button {
             margin-top: 50px;
+             @media (max-width: 1200px) {
+                margin-top: 40px;
+            }
+            @media (max-width: 1000px) {
+               margin-top: 30px;
+            }
+            @media (max-width: 900px) {
+                margin-top: 20px;
+            }
         }
     }
     &__img {
         width: 50%;
+        text-align: center;
+        @media (max-width: 760px) {
+            width: 100%;
+        }
         &:before {
             display: inline-block;
             vertical-align: middle;
@@ -88,6 +132,12 @@
         p {
             color: #848484;
             line-height: 25px;
+        }
+        h2 {
+            color: $text;
+            font-family: $l;
+            font-weight: 700;
+            font-size: 30px;margin-bottom: 16px;
         }
         .button {
             margin-top: 10px;
